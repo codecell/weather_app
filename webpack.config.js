@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'docs'),
   },
   watch: true,
   module: {
@@ -23,10 +23,10 @@ module.exports = {
           'file-loader',
         ],
       },
-    ]
+    ],
   },
   devServer: {
-    contentBase: path.join(__dirname, 'build/'),
+    contentBase: path.join(__dirname, 'docs/'),
     port: 9000,
     open: true,
     publicPath: 'http://localhost:9000/',
