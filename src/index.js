@@ -7,16 +7,15 @@ const forecastBtns = document.querySelectorAll('.btn');
 
 forecastBtns.forEach((btn, idx) => {
   btn.addEventListener('click', (e) => {
-    e.preventDefault(); 
+    e.preventDefault();
 
     const city = document.querySelector('#city');
 
-    if (city.value == '') {
-      alert('No Location specified');
-      return;
+    if (city.value === '') {
+      queryWeather('Lagos', idx);
     }
 
     queryWeather(city.value, idx);
+    city.value = '';
   });
-})
-
+});
