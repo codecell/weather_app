@@ -23,7 +23,7 @@ module.exports = {
           'file-loader',
         ],
       },
-    ]
+    ],
   },
   devServer: {
     contentBase: path.join(__dirname, 'build/'),
