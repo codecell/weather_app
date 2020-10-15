@@ -2,9 +2,7 @@
   This is my implementation of the odin project weather app assignment.
 
   ## Preview
-|                |
-|----------------|
-|<img src='./images/weather_app.png' />|
+  <img src='./images/weather_app.png' />
 
 ## Live Version
   - The project is hosted [here](https://codecell.github.io/weather_app/)
